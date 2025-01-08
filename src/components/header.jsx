@@ -1,6 +1,6 @@
 import React from "react";
 
-export const Header = (props) => {
+ export const Header = (props) => {
   return (
     <header id="header">
       <div className="intro">
@@ -26,4 +26,4 @@ export const Header = (props) => {
       </div>
     </header>
   );
-};
+}; 
