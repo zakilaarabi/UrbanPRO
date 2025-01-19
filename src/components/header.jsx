@@ -15,7 +15,7 @@ import React from "react";
                 <p>{props.data ? props.data.paragraph : "Loading"}</p>
                 <a
                   href="#features"
-                  className="btn btn-custom btn-lg page-scroll"
+                  className="btn btn-warning btn-lg" role="button"
                 >
                   Learn More
                 </a>{" "}
