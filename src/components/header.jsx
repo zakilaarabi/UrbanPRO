@@ -5,7 +5,6 @@ import React from "react";
     <header id="header">
       <div className="intro">
         <div className="overlay">
-          <div className="container">
             <div className="container-header" >
               <div className="row" >
                 <div className="col-md-8 intro-text">
