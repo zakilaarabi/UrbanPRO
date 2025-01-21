@@ -13,8 +13,14 @@ h3,
 h4 {
   font-family: "Raleway", sans-serif;
 }
+.container-header{
+  margin-left: 20px;
+}
+.welcome{
+  width: 600px;
+}
 .logo{
-  max-width: 125px;
+  max-width: 100px;
   margin:0 0 0;
 }
 h2 {
@@ -80,7 +86,7 @@ hr {
   transition: all 0.8s;
 }
 #menu.navbar-default {
-  background-color: #fff;
+  background-color: #eccd1d;
   border-color: rgba(231, 231, 231, 0);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
 }
@@ -94,9 +100,8 @@ hr {
 #menu.navbar-default .navbar-nav > li > a {
   font-family: "Lato", sans-serif;
   text-transform: uppercase;
-  color: #555;
+  color: #000000;
   font-size: 15px;
-  font-weight: 400;
   padding: 15px 2px;
   border-radius: 0;
   margin: 9px 20px 0;
@@ -170,25 +175,27 @@ hr {
   font-family: "Raleway", sans-serif;
   text-transform: uppercase;
   color: #fff;
-  background-color: #5ca9fb;
-  background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+  background-color: transparent;
+  outline: #cbb223;
+  /* background-image: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%); */
   padding: 14px 34px;
   letter-spacing: 1px;
-  margin: 0;
+  margin-left: 20px;
   font-size: 15px;
   font-weight: 500;
   border-radius: 25px;
   transition: all 0.5s linear;
-  border: 0;
+  border-width: 2px;
+  border-color:#cbb223 ;
 }
 .btn-custom:hover,
 .btn-custom:focus,
 .btn-custom.focus,
 .btn-custom:active,
 .btn-custom.active {
-  color: #fff;
+  color: #000000;
   background-image: none;
-  background-color: #6372ff;
+  background-color: #ffdd63;
 }
 .btn:active,
 .btn.active {
@@ -220,7 +227,7 @@ a:focus,
   -o-background-size: cover;
 }
 .intro .overlay {
-  background: rgba(0, 0, 0, 0.601);
+  background: linear-gradient(to right, #000000e5 30%, #00000069 100%);
 }
 .intro h1 {
   /* color: #ffffff;
@@ -245,16 +252,19 @@ a:focus,
 .intro p {
   color: #FFFFFF;
   /* text-shadow: 3px 2px 0 #6c6b6b; */
+  width: 600px;
   font-size: 22px;
   font-weight: 300;
   line-height: 30px;
   margin: 0 auto;
-  margin-bottom: 60px;
+  margin-left: 20px;
+  margin-bottom: 50px;
 }
 header .intro-text {
-  padding-top: 350px;
+  padding-top: 250px;
   padding-bottom: 200px;
-  text-align: center;
+  padding-left: 10px;
+  text-align: left;
 }
 /* Features Section */
 #features {
@@ -623,8 +633,15 @@ label {
     font-size: 72px;
   }
   .intro p {
-    font-size:20px;
+    font-size:18px;
+    width: 480px;
+    
   }
+  .btn-custom {
+    font-size: 13px;
+    padding: 12px 30px;
+  }
+
 }
 
 /* lg */
@@ -632,8 +649,16 @@ label {
   .intro h1{
     font-size: 62px;
   }
+  .welcome{
+    width: 450px;
+  }
   .intro p {
     font-size:18px;
+    width: 500px;
+  }
+  .btn-custom {
+    font-size: 10px;
+    padding: 10px 28px;
   }
 }
 
@@ -642,27 +667,47 @@ label {
   .intro h1{
     font-size: 58px;
   }
+  .welcome{
+    width: 450px;
+  }
   .intro p {
     font-size:16px;
+    width: 450px;
+  }
+  .btn-custom {
+    font-size: 8px;
+    padding: 8px 26px;
   }
 }
 
 /* sm */
 @media (max-width: 640px) {
   .intro h1{
-    font-size: 50px;
+    font-size: 45px;
+  }
+  .welcome{
+    width: 320px;
   }
   .intro p {
     font-size:14px;
+    width: 320px;
+  }
+  .btn-custom {
+    font-size: 7px;
+    padding: 6px 20px;
   }
 }
 
 /* xs */
-@media (max-width: 400px) {
+@media (max-width: 405px) {
   .intro h1{
     font-size: 40px;
   }
   .intro p {
     font-size:12px;
+  }
+  .btn-custom {
+    font-size: 6px;
+    padding: 5px 18px;
   }
 }
