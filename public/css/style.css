@@ -134,7 +134,7 @@ hr {
   bottom: -1px !important;
   width: 100% !important;
   height: 2px !important;
-  background: linear-gradient(to right, #ff6363 0%, #5ca9fb 100%) !important;
+  background: #000000 !important;
   content: "" !important;
   transition: width 0.2s !important;
 }
@@ -147,7 +147,7 @@ hr {
   border-color: #eccd1d;
 }
 .navbar-default .navbar-toggle:hover > .icon-bar {
-  background-color: #eccd1d;
+  background-color: #000000;
 }
 .section-title {
   margin-bottom: 70px;
@@ -292,8 +292,8 @@ header .intro-text {
 }
 #about h2 {
   position: relative;
-  margin-bottom: 15px;
-  padding-bottom: 15px;
+  margin: 15px 0px 15px;
+  padding: 15px 0px 15px;
 }
 #about h2::after {
   position: absolute;
@@ -688,8 +688,12 @@ label {
 
 /* sm */
 @media (max-width: 640px) {
+  .intro .overlay {
+    background: rgba(0, 0, 0, 0.8)
+  }
   .intro h1{
     font-size: 45px;
+    margin-left: 0;
   }
   .welcome{
     width: 320px;
@@ -697,23 +701,38 @@ label {
   .intro p {
     font-size:14px;
     width: 320px;
+    margin-left: 0;
   }
   .btn-custom {
     font-size: 7px;
     padding: 6px 20px;
+    margin-left: 0;
   }
 }
 
 /* xs */
 @media (max-width: 405px) {
+  .intro .overlay {
+    background: rgba(0, 0, 0, 0.8)
+  }
   .intro h1{
     font-size: 40px;
   }
+  .welcome{
+    width: 250px;
+  }
   .intro p {
     font-size:12px;
+    width: 250px ;
   }
   .btn-custom {
     font-size: 6px;
     padding: 5px 18px;
   }
+  #features,#about,#services,#portfolio,#testimonials{
+    width: 380px;
+  }
+  .container{
+    width: 95%;
+    }
 }
